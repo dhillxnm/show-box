@@ -1,4 +1,97 @@
 @import url("./style.css");
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner */
+
+header{
+  background-color: var(--background-color-one);
+  height: 60px;
+}
+
+.landing {
+  background: #fff0 url("../media/desc-page-hero.jpg") center / cover no-repeat;
+  position: relative;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  line-height: 700px;
+}
+
+.play{
+  font-size: 90px;
+  color: var(--action-button-color);
+}
+
+/* Movie Box */
+
+.movie{
+  transform: translateY(-300px);
+  height: auto;
+  background-color: var(--background-color-two);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 40px 30px 60px 30px;
+}
+
+.photo-column{
+  width: 150px;
+}
+
+.photo{
+  width: 100%;
+  height: 220px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: url("../media/desc-page-hero.jpg") center / cover no-repeat;
+}
+
+.like, .dislike{
+  color: var(--font-color-one);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.like {
+  background-color: var(--action-button-color);
+  margin-bottom: 5px;
+}
+
+.dislike {
+  background-color: var(--input-background-color);
+}
+
+.info-section{
+  width: 100%;
+  margin-left: 20px;
+}
+
+button[type=button]{
+  padding: 0 15px;
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.play-two{
+  color: var(--font-color-one);
+  background-color: var(--action-button-color);
+}
+
+.fa-play, .fa-plus, .fa-thumbs-up, .fa-thumbs-down{
+  margin-right: 10px;
+}
 
 
+.watch-favorite{
+  justify-content: space-between;
+}
+
+.info-section > p{
+  color: #000;
+  font-size: 30px;
+}
