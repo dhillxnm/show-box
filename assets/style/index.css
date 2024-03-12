@@ -73,3 +73,33 @@ div.column {
     font-size: 40px;
     color: #fe0089;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex .list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .flex .list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    font-size: 18px;
+  }
+
+  .flex .list a:hover {
+    text-decoration: underline;
+  }
+  
+  .flex .space-between {
+    justify-content: space-between;
+  }
+
+  
+ 

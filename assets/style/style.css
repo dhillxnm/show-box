@@ -193,7 +193,7 @@ h4, p {
   width: 100%;
 }
 
-.landing-email-input {
+.landing-email-input, .footer-email {
   width: 500px;
   height: 80px;
   margin-top: 13px;
@@ -236,3 +236,30 @@ h4, p {
 .section select {
   margin-bottom: 25%;
 }
+
+/*----------------------------*/
+/*--------footer email----*/
+/*----------------------------*/
+
+.footer-p p {
+  color: #fff;
+  padding: 80px 0px 20px 0px;
+  font-size: 21px;
+}
+
+
+.footer-email {
+  width: 75%;
+}
+
+section p span {
+  color: #fff;
+  padding: 0px;
+  font-size: 21px;
+}
+
+footer p {
+  color: #fff;
+  height: 50px;
+  width: 100%;
+} 
