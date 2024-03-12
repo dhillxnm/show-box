@@ -1,8 +1,6 @@
-@charset "utf-8";
+@import url("./style.css");
 
-
-.container {
-    width: min(100% - 30px, 1080px);
-    margin: 0 auto;
+.secondary-hero-image {
+    background: #fff0 url("../media/main-page-hero.jpg") center /cover no-repeat;
 }
-
+  
