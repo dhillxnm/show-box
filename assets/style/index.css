@@ -1,8 +1,2 @@
-@charset "utf-8";
-
-
-.container {
-    width: min(100% - 30px, 1080px);
-    margin: 0 auto;
-}
+@import url("./style.css");
 
