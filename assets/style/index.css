@@ -1,0 +1,6 @@
+@import url("./style.css");
+
+.secondary-hero-image {
+    background: #fff0 url("../media/main-page-hero.jpg") center /cover no-repeat;
+}
+  
