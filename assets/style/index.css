@@ -20,6 +20,12 @@
     justify-content: space-between;
 }
 
+
+.header-button:hover {
+    background-color: #a71a0d;
+}
+
+
 /*----------------------------------*/
 /*-----------Section----------------*/
 /*----------------------------------*/
@@ -28,13 +34,14 @@
 section.three-column {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2%;
 }
   
 
 div.column {
     flex: 1; 
     border: 1px solid #ddd;
-    margin: 0.5rem; 
+    margin: 0.5%; 
     width: 73px;
     height: 390px;
     border-radius: 19px;
@@ -47,15 +54,47 @@ div.column {
     border-radius: 19px;
 }
 
+
+.column img {
+    opacity: 0.7; 
+    transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out;
+}
+
+
+.column img + .column img {
+    margin-bottom: 4%;
+}
+ 
+
+.column:hover img {
+    opacity: 1; 
+    transform: scale(1.02);
+}
+
+.more  a {
+    color: #fff;
+    text-decoration: underline;
+    position: relative;
+    left: 95%;;
+}
+
+.more a:hover {
+    text-decoration: underline;
+    color: #1e90ff;
+}
+ 
+
 .reasons {
     background: linear-gradient(135deg, rgb(29 26 51/ 2), rgb(32 17 30 / 3));
     position: relative;
 }
 
+
 .reasons h2 {
     padding: 15px 0px 0px 23px;
     color: #fff;
 }
+
 
 .reasons p {
     padding-left: 11px;
@@ -66,6 +105,7 @@ div.column {
     color: #fff;
 }
 
+
 .reasons i {
     position: absolute;
     right: 37px;
@@ -73,3 +113,44 @@ div.column {
     font-size: 40px;
     color: #fe0089;
 }
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+
+.flex .list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.flex .list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    font-size: 20px;
+}
+
+
+.flex .list a:hover {
+    text-decoration: underline;
+}
+  
+
+.flex .space-between {
+    justify-content: space-between;
+}
+
+
+.footer p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 19px;
+}
+
+
