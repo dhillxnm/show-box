@@ -72,6 +72,7 @@ body {
   gap: 40px;
 }
 
+
 /*-------------*/
 /*---Header----*/
 /*-------------*/
@@ -144,11 +145,13 @@ header .header-button{
 
 /*Main*/
 
+
 main {
   background-color: var(--background-color-one); 
   height: calc(100% - 56px - 156px); 
   overflow: auto;
 }
+
 
 h1 {
   font-size: 45px;
@@ -158,10 +161,12 @@ h1 {
   padding: 50px 0px 10px 0px;
 }
 
+
 h1 + p {
   font-size: 18px;
   font-weight: 400;
 }
+
 
 h4, p {
   padding: 13px;
@@ -169,7 +174,9 @@ h4, p {
   font-weight: 300px;
 }
 
+
 /*Banners heroes and sections*/
+
 
 .secondary-hero-container{
   width: 100%;
@@ -177,11 +184,13 @@ h4, p {
   position: relative;
 }
 
+
 .secondary-hero-image {
   background-position: center;
   height: 910px;
   position: relative;
  }
+
 
 .secondary-hero-text {
   height: 100%;
@@ -194,10 +203,12 @@ h4, p {
   z-index: 2;
   position: absolute;
 
+
   div {
     text-align: center;
   }
 }
+
 
 .secondary-hero-image:before {
   position: absolute;
@@ -207,6 +218,7 @@ h4, p {
   height: 100%;
   width: 100%;
 }
+
 
 .landing-email-input, .footer-email {
   width: 500px;
@@ -240,7 +252,11 @@ h4, p {
   cursor: pointer;
   transition: color 0.25s ease-in-out;
   line-height: 26px;
+}
 
+
+.landing-email-submit:hover {
+  background-color: #a71a0d;
 }
 
 
@@ -248,13 +264,16 @@ h4, p {
 /*--------trending section----*/
 /*----------------------------*/
 
+
 .section select {
-  margin-bottom: 25%;
+  margin-bottom: 8%;
 }
+
 
 /*----------------------------*/
 /*--------footer email----*/
 /*----------------------------*/
+
 
 .footer-p p {
   color: #fff;
@@ -267,14 +286,16 @@ h4, p {
   width: 75%;
 }
 
+
 section p span {
   color: #fff;
   padding: 0px;
   font-size: 21px;
 }
 
+
 footer p {
-  color: #fff;
+  color: rgb(255 255 255/0.4);
   height: 50px;
   width: 100%;
 } 
