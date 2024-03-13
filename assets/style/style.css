@@ -291,16 +291,16 @@ h4, p {
   font-size: 20px;
 }
 
-.dialog-container a {
-  height: 40px;
-  margin-top: 20px;
-  color: var(--font-color-one);
-  text-decoration: none;
-  
-  &:hover {
-    text-decoration: underline;
+.forgot-password {
+  height: 10px;
+  margin-top: 15px;
+  a {
+    color: var(--font-color-one);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  
 }
 
 .dialog-footer {
@@ -362,3 +362,4 @@ h4, p {
   line-height: 26px;
 
 }
+
