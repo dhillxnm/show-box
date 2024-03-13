@@ -73,3 +73,26 @@ div.column {
     font-size: 40px;
     color: #fe0089;
 }
+
+.footer-p p {
+    color: #fff;
+    padding: 80px 0px 20px 0px;
+    font-size: 21px;
+  }
+  
+  
+  .footer-email {
+    width: 75%;
+  }
+  
+  section p span {
+    color: #fff;
+    padding: 0px;
+    font-size: 21px;
+  }
+  
+  footer p {
+    color: #fff;
+    height: 50px;
+    width: 100%;
+  }
