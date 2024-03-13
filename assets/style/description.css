@@ -8,6 +8,11 @@
 /* Banner */
 
 header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   background-color: var(--background-color-one);
   height: 60px;
 }
@@ -116,3 +121,128 @@ article{
   font-size: 16px;
   padding: 3px;
 }
+
+/*----------------------------------*/
+/*-----------Section----------------*/
+/*----------------------------------*/
+
+h2 {
+  font-size: 40px;
+  color: #fff;
+  padding: 50px 0px 10px 0px;
+}
+
+.section{
+  margin-top: -300px;
+}
+section.three-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+}
+
+div.column {
+  flex: 1; 
+  border: 1px solid #ddd;
+  margin: 0.5%; 
+  width: 73px;
+  height: 390px;
+  border-radius: 19px;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+  opacity: 0.7; 
+  transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out;
+}
+
+.column img + .column img {
+  margin-bottom: 4%;
+}
+
+.column:hover img {
+  opacity: 1; 
+  transform: scale(1.02);
+}
+
+.more a {
+  color: #fff;
+  text-decoration: underline;
+  position: relative;
+  left: 95%;;
+}
+
+.more a:hover {
+  text-decoration: underline;
+  color: #1e90ff;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex .list {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flex .list a {
+  text-decoration: none;
+  color: #fff;
+  padding: 7px;
+  font-size: 20px;
+}
+
+.flex .list a:hover {
+  text-decoration: underline;
+}
+
+.flex .space-between {
+  justify-content: space-between;
+}
+
+.footer p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+
+/*----------------------------*/
+/*---English/French toggle----*/
+/*----------------------------*/
+
+.section select {
+  margin-bottom: 8%;
+}
+
+/*----------------------------*/
+/*--------footer email--------*/
+/*----------------------------*/
+
+
+.footer-p p {
+  color: #fff;
+  padding: 80px 0px 20px 0px;
+  font-size: 21px;
+}
+
+.footer-email {
+  width: 75%;
+}
+
+section p span {
+  color: #fff;
+  padding: 0px;
+  font-size: 21px;
+}
+
+footer p {
+  color: rgb(255 255 255/0.4);
+  height: 50px;
+  width: 100%;
+} 
