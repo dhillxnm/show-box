@@ -27,14 +27,15 @@ section.three-column {
 }
 
 div.column {
-    flex: 1;
     border: 1px solid #ddd;
     margin: 0.5%;
-    width: calc(33.33% - 1%);
+    /* width: calc(33.33% - 1%);
+    flex: 1; */
+    flex: 0 0 calc(25% - 15px);
+    width: calc(25% - 15px);
     height: 390px;
     border-radius: 19px;
 }
-
 .column img {
     width: 100%;
     height: 100%;
@@ -120,14 +121,33 @@ div.column {
 }
 
 /* Media queries for responsiveness */
+@media (max-width: 930px) {
+    div.column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 100%;
+        height: auto;
+    }
+}
 
-@media screen and (max-width: 768px) {
-    .three-column {
-        flex-direction: column; /* Stack the columns vertically */
+
+@media screen and (max-width: 765px) {
+
+    .secondary-hero-text h1{
+        font-size:19px
+    }
+    .secondary-hero-text h4 {
+        font-size: 20px;
+    }
+    .landing-email-submit{
+        width:181px;
+        font-size: 17px;
+    }
+    .landing-email-input, .footer-email { 
+        width:357px;
     }
 
-    .column {
-        width: 100%; /* Make columns take full width */
+    .secondary-hero-text p{
+        font-size: 20px;
     }
 
     .column img {
@@ -138,7 +158,11 @@ div.column {
 @media screen and (max-width: 500px) {
     .three-column {
         width: 900px; /* Stack the columns vertically */
-        
+    }
+
+    div.column {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .reasons p {
