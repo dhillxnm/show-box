@@ -120,73 +120,6 @@ div.column {
     font-size: 19px;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 930px) {
-    div.column {
-        flex: 0 0 calc(50% - 10px);
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-<<<<<<< HEAD
-
-@media screen and (max-width: 765px) {
-
-    .secondary-hero-text h1{
-        font-size:19px
-    }
-    .secondary-hero-text h4 {
-        font-size: 20px;
-    }
-    .landing-email-submit{
-        width:181px;
-        font-size: 17px;
-    }
-    .landing-email-input, .footer-email { 
-        width:357px;
-    }
-
-    .secondary-hero-text p{
-        font-size: 20px;
-    }
-
-    .column img {
-        width: 100%; /* Make images take full width */
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .three-column {
-        width: 900px; /* Stack the columns vertically */
-    }
-
-    div.column {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .reasons p {
-        height: 250px;
-    }
-    .form-box  {
-        width: 69%;
-
-    }
-    .form-box .landing-email-submit {
-        width:201px
-    }
-    
-    .secondary-hero-text h1{
-        font-size:20px
-    }
-
-    .secondary-hero-text h4, .secondary-hero-text p  {
-        font-size:13px;
-    }
-
-}
-=======
 /** BAsic Dialog Styles **/
   
 .dialog-container {
@@ -296,4 +229,70 @@ div.column {
   
   }
   
->>>>>>> conflict-resolve
+
+
+/* Media queries for responsiveness */
+@media (max-width: 930px) {
+    div.column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 765px) {
+
+    .secondary-hero-text h1{
+        font-size:19px
+    }
+    .secondary-hero-text h4 {
+        font-size: 20px;
+    }
+    .landing-email-submit{
+        width:181px;
+        font-size: 17px;
+    }
+    .landing-email-input, .footer-email { 
+        width:357px;
+    }
+
+    .secondary-hero-text p{
+        font-size: 20px;
+    }
+
+    .column img {
+        width: 100%; /* Make images take full width */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .three-column {
+        width: 900px; /* Stack the columns vertically */
+    }
+
+    div.column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .reasons p {
+        height: 250px;
+    }
+    .form-box  {
+        width: 69%;
+
+    }
+    .form-box .landing-email-submit {
+        width:201px
+    }
+    
+    .secondary-hero-text h1{
+        font-size:20px
+    }
+
+    .secondary-hero-text h4, .secondary-hero-text p  {
+        font-size:13px;
+    }
+
+}
