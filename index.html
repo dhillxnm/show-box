@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/style/index.css" media="all">
     <link rel="stylesheet" href="./assets/style/style.css" media="all">
-    <script src="./assets/script/app.js" defer></script>
+    <script src="./assets/script/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,6 +52,23 @@
                         </div>
                         </form>
                     </div>
+                </div>
+                <div class="dialog-container center">
+                    <h2>Sign In</h2>
+                    <form id="login-form">
+                            <input type="text" id="email" class="dialog-email-input" placeholder="Email or phone number" required>
+                            <input type="password" id="password" class="dialog-email-input" placeholder="Password" required>
+                            <input type="submit" class="dialog-container-submit" value="Sign In">
+                            <div class="forgot-password">
+                                <a href="#"> Forget password?</a>   
+                            </div>
+                            <div class="dialog-footer">
+                                <input type="checkbox" class="remember" name="remember"><label for="remember">Remember me</label>
+                                <p>New to Showbox? <a href="#">Sign up now.</a></p>
+                                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+                            </div>
+                      
+                    </form>
                 </div>
             </div>
         </section>

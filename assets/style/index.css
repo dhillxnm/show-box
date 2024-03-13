@@ -129,6 +129,7 @@ div.column {
     }
 }
 
+<<<<<<< HEAD
 
 @media screen and (max-width: 765px) {
 
@@ -185,3 +186,114 @@ div.column {
     }
 
 }
+=======
+/** BAsic Dialog Styles **/
+  
+.dialog-container {
+    height: 750px;
+    width: 450px;
+    background-color: var(--background-mask);
+    border-radius: 8px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    display: none;
+  }
+  
+  .dialog-container h2 {
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: var(--font-color-one);
+  }
+  
+  .dialog-container input {
+    font-size: 20px;
+  }
+  
+  .forgot-password {
+    height: 10px;
+    margin-top: 15px;
+    a {
+      color: var(--font-color-one);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .dialog-footer {
+    padding: 0px 15px;
+    margin-top: 80px;
+  }
+  
+  .dialog-footer p {
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: left;
+    color: var(--font-color-three);
+    a {
+      color: var(--font-color-one);
+      text-decoration: none;
+    }
+  
+  }
+  
+  .dialog-footer label {
+    color: var(--font-color-one);
+    margin-left: 10px;
+    margin-right: 200px;
+    font-size: 18px;
+    text-align: left;
+  
+  }
+  
+  .dialog-footer p + p {
+    font-size: 12px;
+    a {
+      color: rgb(0, 0, 255);
+      text-decoration: none;
+    }
+  }
+  
+  
+  .dialog-email-input {
+    width: 312.5px;
+    height: 55px;
+    margin-top: 13px;
+    padding: 0px 17px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0.5px solid var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
+  
+  }
+  
+  .dialog-container-submit {
+    width: 312.5px;
+    height: 55px;
+    margin-top: 13px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--action-button-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
+  
+  }
+  
+>>>>>>> conflict-resolve
