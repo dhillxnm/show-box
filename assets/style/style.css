@@ -7,6 +7,7 @@
   --background-color-two: rgb(255, 255, 255);
   --font-color-one: rgb(240, 235, 235);
   --font-color-two: rgb(28, 26, 26);
+  --font-color-three: rgba(228, 221, 221, 0.559);
   --footer-background: rgba(251, 251, 251, 0);
   --background-mask: rgba(0, 0, 0, 0.7);
   --action-button-color: rgb(214, 33, 17);
@@ -288,6 +289,30 @@ h4, p {
 
 .dialog-container input {
   font-size: 20px;
+}
+
+.dialog-container a {
+  margin-top: 20px;
+  color: var(--font-color-one);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  
+}
+
+.dialog-footer {
+  padding: 0px 15px;
+  margin-top: 80px;
+}
+
+.dialog-footer p {
+  margin-left: 20px;
+  font-size: 18px;
+  text-align: left;
+  color: var(--font-color-three)
+
 }
 
 
