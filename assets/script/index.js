@@ -1,6 +1,5 @@
 'use strict';
 
-//  *** Global constants  ***
 const headerSigninbutton = document.querySelector('.header-button');
 const getStartedinput = document.querySelector('.landing-email-input');
 const getStartedbutton = document.querySelector('.landing-email-submit');
@@ -29,3 +28,5 @@ headerSigninbutton.addEventListener('click', function() {
         signinDialog = false;
     }
 });
+
+  
