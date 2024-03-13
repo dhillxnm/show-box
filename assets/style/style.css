@@ -287,6 +287,7 @@ h4, p {
   margin-left: 70px;
   margin-top: 60px;
   margin-bottom: 10px;
+  color: var(--font-color-one);
 }
 
 .dialog-container input {
@@ -314,11 +315,16 @@ h4, p {
   margin-left: 20px;
   font-size: 18px;
   text-align: left;
-  color: var(--font-color-three)
+  color: var(--font-color-three);
+  a {
+    color: var(--font-color-one);
+    text-decoration: none;
+  }
 
 }
 
 .dialog-footer label {
+  color: var(--font-color-one);
   margin-left: 10px;
   margin-right: 200px;
   font-size: 18px;
@@ -328,6 +334,10 @@ h4, p {
 
 .dialog-footer p + p {
   font-size: 12px;
+  a {
+    color: blue;
+    text-decoration: none;
+  }
 }
 
 
