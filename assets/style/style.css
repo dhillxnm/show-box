@@ -57,7 +57,7 @@ body {
 }
 
 .gap-10 {
-  gap: 15px;
+  gap: 10px;
 }
 
 .gap-40 {
@@ -67,7 +67,7 @@ body {
 /*Header*/
 
 header {
-  height: 56px;
+  height: 130px;
   width: 100%;
   color: var(--font-color-one);
   line-height: 56px;
@@ -80,12 +80,11 @@ nav {
 }
 
 .logo {
-  margin-top: 8px;
+  margin-bottom: 20px;
   background:#ffffff00 url('../media/showbox-logo.png') center / cover no-repeat;
   background-size: contain;
   width: 190px;
-  height: 70px;
-  line-height: 56px;
+  height: 50px;
 }
 
 header select , .section select{
@@ -100,7 +99,7 @@ header select , .section select{
   cursor: pointer;
   transition: color 0.25s ease-in-out;
   padding-left: 8px;
-  margin-bottom: 30px;
+  margin-top: 14px;
   line-height: 56px;
 
   &:hover {
@@ -111,7 +110,7 @@ header select , .section select{
 header .header-button{
   width: 120px;
   height: 45px;
-  margin-top: 13px;
+  margin-top: 34px;
   font-size: 16px;
   font-weight: 500;
   border-radius: 5px;
@@ -196,8 +195,8 @@ h4, p {
 }
 
 .landing-email-input {
-  width: 500px;
-  height: 80px;
+  width: 320px;
+  height: 55px;
   margin-top: 13px;
   padding: 0px 17px;
   font-size: 25px;
@@ -215,8 +214,8 @@ h4, p {
 
 
 .landing-email-submit {
-  width: 250px;
-  height: 80px;
+  width: 200.5px;
+  height: 55px;
   margin-top: 13px;
   font-size: 21px;
   font-weight: 500;
@@ -234,6 +233,7 @@ h4, p {
 /*----------------------------*/
 /*--------trending section----*/
 /*----------------------------*/
+
 
 .section select {
   margin-bottom: 25%;
@@ -315,8 +315,12 @@ h4, p {
 
 }
 
+.dialog-footer p + p {
+  font-size: 12px;
+}
 
-.landing-email-input {
+
+.dialog-email-input {
   width: 312.5px;
   height: 55px;
   margin-top: 13px;
