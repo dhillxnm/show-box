@@ -280,6 +280,7 @@ h4, p {
   left:50%;
   transform: translate(-50%, -50%);
   align-items: center;
+  display: none;
 }
 
 .dialog-container h2 {
@@ -335,7 +336,7 @@ h4, p {
 .dialog-footer p + p {
   font-size: 12px;
   a {
-    color: blue;
+    color: rgb(0, 0, 255);
     text-decoration: none;
   }
 }
@@ -375,8 +376,3 @@ h4, p {
 
 }
 
-.sign-in-menu {
-}
-
-.dialog-container {
-}
