@@ -21,8 +21,17 @@ header{
   line-height: 700px;
 }
 
+.landing:before{
+  position: absolute;
+  background-color: var(--background-mask);
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+
 .play{
   font-size: 90px;
+  z-index: 1;
   color: var(--action-button-color);
 }
 
@@ -54,8 +63,12 @@ header{
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
+.like p, .dislike p{
+  padding: 0;
+}
 .like {
   background-color: var(--action-button-color);
   margin-bottom: 5px;
@@ -71,9 +84,9 @@ header{
 }
 
 button[type=button]{
-  padding: 0 15px;
+  padding: 10px 15px;
   width: auto;
-  height: 40px;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -86,12 +99,20 @@ button[type=button]{
   margin-right: 10px;
 }
 
-
 .watch-favorite{
   justify-content: space-between;
 }
 
-.info-section > p{
+.info-section p:first-of-type{
   color: #000;
   font-size: 30px;
+}
+
+article{
+  margin-bottom: 10px;
+}
+
+.stat{
+  font-size: 16px;
+  padding: 3px;
 }
