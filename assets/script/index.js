@@ -2,9 +2,11 @@
 
 //  *** Global constants  ***
 const headerSigninbutton = document.querySelector('.header-button');
+const headTag = document.getElementsByTagName('head')[0];
+const styleTag = document.createElement("style");
 
 
-//  *** Signin button listener function
+
 let signinDialog = false;
 headerSigninbutton.addEventListener('click', function() {
     if (!signinDialog){
@@ -27,4 +29,5 @@ headerSigninbutton.addEventListener('click', function() {
         signinDialog = false;
     }
 });
+
 

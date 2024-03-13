@@ -118,7 +118,6 @@ header .header-button{
   color: var(--font-color-one);
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.25s ease-in-out;
   line-height: 26px;
 
   &:hover {
