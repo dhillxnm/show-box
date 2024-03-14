@@ -5,6 +5,11 @@
   flex-direction: column;
 }
 
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Banner */
 
 header{
@@ -44,13 +49,17 @@ header{
   transform: translateY(-300px);
   height: auto;
   background-color: var(--background-color-two);
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: var(--shadow);
   padding: 40px 30px 60px 30px;
 }
 
 .photo-column{
   width: 150px;
+}
+
+.photo-column .watch-favorite{
+  display: none;
 }
 
 .photo{
@@ -75,23 +84,18 @@ header{
   justify-content: space-around;
 }
 
-.like {
-}
-
-.dislike {
-}
-
 .like:hover{
-  color: forestgreen;
+  color: #228b22;
 }
 
 .dislike:hover{
-  color: red;
+  color: #ff0000;
 }
 
 .info-section{
   width: 900px;
   margin-left: 20px;
+  display: grid;
 }
 
 button[type=button]{
@@ -117,6 +121,14 @@ button[type=button]{
 .info-section p:first-of-type{
   color: #000;
   font-size: 30px;
+}
+
+.info-section p{
+  color: var(--font-color-two);
+}
+
+.title{
+  justify-self: center;
 }
 
 article{
@@ -149,17 +161,17 @@ section.three-column {
 
 div.column {
   flex: 1; 
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   margin: 0.5%; 
   width: 73px;
   height: 390px;
-  border-radius: 19px;
+  /* border-radius: 5px; */
 }
 
 .column img {
   width: 100%;
   height: 100%;
-  border-radius: 19px;
+  border-radius: 10px;
   opacity: 0.7; 
   transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out;
 }
@@ -171,6 +183,7 @@ div.column {
 .column:hover img {
   opacity: 1; 
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 .more a {
@@ -252,3 +265,174 @@ footer p {
   height: 50px;
   width: 100%;
 } 
+
+/* Media queries for responsiveness */
+@media (max-width: 930px) { /* Laptops and Desktops */
+    div.column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .form-box.center.flex-wrap{
+      flex-wrap: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 765px) { /* Tablets */
+
+    .secondary-hero-text h1{
+        font-size:19px
+    }
+    .secondary-hero-text h4 {
+        font-size: 20px;
+    }
+    .landing-email-submit{
+        width:181px;
+        font-size: 17px;
+    }
+    .landing-email-input, .footer-email { 
+        width:357px;
+    }
+
+    .secondary-hero-text p{
+        font-size: 20px;
+    }
+
+    .column img {
+        width: 100%; /* Make images take full width */
+    }
+
+    .form-box.center.flex-wrap{
+      flex-wrap: nowrap;
+    }
+
+    /* Tessstiingggg */
+
+    .photo{
+      margin-top: 80px;
+    }
+    .photo-column{
+      width: 380px;
+    }
+
+    .play-two{
+      margin: 10px 0;
+    }
+
+    button[type=button].play-two, button[type=button].plus{
+      width: 100%;
+    }
+
+    .photo-column .watch-favorite{
+      display: block;
+    }
+
+    .info-section .watch-favorite{
+      display: none;
+    }
+
+    .title{
+      justify-self: left;
+      padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) { /* Smartphones or tablets in portrait */
+
+    .header.container.flex.space-between {
+        width: 444px;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .secondary-hero-text h1 {
+        font-size: 33px;
+        display: block;
+        width: 479px;
+        text-align: center;
+        padding: 0px;
+    } 
+
+   .secondary-hero-text h4 {
+        width: 506px;
+        font-size: 19px;
+        padding-right: 12%;
+    } 
+
+    .secondary-hero-text p {
+        font-size: 15px;
+        padding: 0px;
+    }
+
+     h1 {
+        text-align: center;
+        margin: 0px;
+     }
+    .three-column {
+        width: 250px; 
+        text-align: center;
+    }
+
+    div.container.section{
+    }
+
+    div.column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .reasons p {
+        height: 250px;
+    }
+
+    .form-box  {
+        width: 69%;
+
+    }
+    .form-box .landing-email-submit {
+        width:201px
+    }
+
+    /* teeeeeeessssstingggggggg  movie box*/
+    .movie {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center;
+    }
+
+    .photo-column{
+      width: 200px;
+    }
+
+    .photo{
+      margin-top: 0;
+      height: 250px;
+    }
+
+    button[type=button].play-two, button[type=button].plus{
+      width: 100%;
+    }
+
+    .play-two{
+      margin: 10px 0;
+    }
+
+    .plus{
+      margin: 0;
+    }
+    
+    .watch-favorite {
+      flex-direction: column;
+      justify-self: center;
+      width: 200px;
+    }
+
+    .info-section{
+      width: 100%;
+      margin-left: 0;
+      align-items: center;
+    }
+
+}
