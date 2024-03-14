@@ -157,6 +157,16 @@ div.column {
 
 @media screen and (max-width: 765px) {
 
+    section.three-column {
+        width: 83%;
+        gap: 5px;
+    }
+
+    .more a {
+        left: 80%;
+    }
+
+
     .secondary-hero-text h1{
         font-size:19px
     }
@@ -210,19 +220,35 @@ div.column {
      h1 {
         text-align: center;
         margin: 0px;
+        
      }
-    .three-column {
-        width: 250px; 
-        text-align: center;
+
+    section h1 {
+        width: 362px;
     }
+
+    .three-column {
+    width: 312px;
+    text-align: center;
+    gap: 10px;
+    }
+
+    /* .six {
+        height: 417px;
+    } */
 
     div.column {
         flex: 0 0 100%;
         max-width: 100%;
+        height: 430px;
     }
 
     .reasons p {
         height: 250px;
+    }
+
+    .footer-p p {
+        padding: 34px 0px 20px 0px;
     }
 
     .form-box  {
@@ -238,17 +264,18 @@ div.column {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 500px;
+        width: 328px;
     }
+
 
     form div .landing-email-input{
         width: 300px;
         height: 70px;
     }
 
-    form-box .landing-email-submit {
-        width: 174px;
-        height: 56px;
-        font-size: 14px;
+    .form-box .landing-email-submit {
+        width: 160px;
+        height: 57px;
+        font-size: 16px;
     }
 }
