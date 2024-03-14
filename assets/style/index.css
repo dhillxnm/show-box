@@ -133,7 +133,6 @@ div.column {
     left:50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    display: none;
   }
   
   .dialog-container h2 {
@@ -228,7 +227,6 @@ div.column {
     line-height: 26px;
   
   }
-  
 
 
 /* Media queries for responsiveness */
