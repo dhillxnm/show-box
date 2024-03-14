@@ -39,43 +39,56 @@ Our streaming website project is designed to provide users with a seamless strea
 - Browse through the available content using categories, genres, or search functionality.
 - Click on a title to view details and start streaming.
 
+## Contributions
+
+Manpreet kaur
+contact: click [here](https://github.com/dhillxnm)
+
+Abdul Malik
+contact: click [here](https://github.com/aolumoh)
+
+Martin Aleogho
+contact: click [here](https://github.com/matineno)
+
+Nishat Samanta Progga
+contact: click [here](https://github.com/samanthaprogga)
+
+## Javascript(pop-up)
+
 ```Javascript (popup signin)
+function hideDialog() {
+  dialog.classList.remove('isvisible');
+  overlay.classList.remove('isvisible');
+  isVisible = false;
+}
 
-const headerSigninbutton = document.querySelector('.header-button');
-const getStartedinput = document.querySelector('.landing-email-input');
-const getStartedbutton = document.querySelector('.landing-email-submit');
-const headTag = document.getElementsByTagName('head')[0];
-const styleTag = document.createElement("style");
+onEvent('load', window, function() {
+  clearForm();
+});
 
-let signinDialog = false;
-headerSigninbutton.addEventListener('click', function() {
-    if (!signinDialog){
-        styleTag.innerHTML = `
-        .sign-in-menu {
-          display: none;
-        }
-        .secondary-hero-text {
-          display: none;
-        }
-        .dialog-container {
-          display: block;
-        }
-        `;
-        headTag.appendChild(styleTag);
-        signinDialog = true;
-    }
-    else{
-        styleTag.innerHTML = ``;
-        signinDialog = false;
-    }
+onEvent('click', contact, function() {
+  showDialog()
+});
+
+onEvent('click', overlay, function() {
+  if (isVisible) hideDialog();
+});
+
+onEvent('keyup', document, function(event) {
+  if (isVisible && event.key === 'Escape') {
+    hideDialog();
+  }
+});
+
+onEvent('click', button, function() {
+  alert.classList.add('isvisible');
+  hideDialog();
+  setTimeout(function() {
+    alert.classList.remove('isvisible');
+    clearForm();
+  }, 5500);
 });
 
 ```
 
-## Contributions
-
-Manpreet kaur
-contact: click (here)[https://github.com/dhillxnm]
-
-Abdul Malik
-contac: click (here)[https://github.com/aolumoh]
+To see live demo click [here](https://dhillxnm.github.io/show-box/)
