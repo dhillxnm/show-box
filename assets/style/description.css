@@ -289,11 +289,10 @@ footer p {
         left: 80%;
     }
 
-    form div .landing-email-input {
-        width: 410px;
+    .landing-email-input, .footer-email { 
+        width:357px;
         height: 57px;
     }
-
     .form-box .landing-email-submit {
         width: 160px;
         height: 57px;
@@ -368,6 +367,7 @@ footer p {
     }
     .landing-email-input, .footer-email { 
         width:357px;
+        height: 57px;
     }
 
     .column img {
@@ -466,14 +466,22 @@ footer p {
         width: 328px;
     }
 
-    form div .landing-email-input{
-        width: 300px;
-        height: 70px;
+    .landing-email-input, .footer-email { 
+        width:300px;
+        height: 57px;
     }
 
     .form-box .landing-email-submit {
         width: 160px;
         height: 57px;
         font-size: 16px;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    html {
+        width: 440px;
     }
 }
