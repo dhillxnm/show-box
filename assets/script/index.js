@@ -38,4 +38,41 @@ function clearForm() {
   message.value = '';
 }
 
- 
+function showDialog() {
+  dialog.classList.add('isvisible');
+  overlay.classList.add('isvisible');
+  isVisible = true;
+}
+
+function hideDialog() {
+  dialog.classList.remove('isvisible');
+  overlay.classList.remove('isvisible');
+  isVisible = false;
+}
+
+onEvent('load', window, function() {
+  clearForm();
+});
+
+onEvent('click', contact, function() {
+  showDialog()
+});
+
+onEvent('click', overlay, function() {
+  if (isVisible) hideDialog();
+});
+
+onEvent('keyup', document, function(event) {
+  if (isVisible && event.key === 'Escape') {
+    hideDialog();
+  }
+});
+
+onEvent('click', button, function() {
+  alert.classList.add('isvisible');
+  hideDialog();
+  setTimeout(function() {
+    alert.classList.remove('isvisible');
+    clearForm();
+  }, 5500);
+});
