@@ -371,3 +371,28 @@ div.column.reasons{
         font-size: 16px;
     }
 }
+
+/** Hero transision styles **/
+
+.secondary-hero-text {
+    h1, p {
+        color: #fff;
+        transition: all 3s ease-out;
+    }
+
+    p {
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    h1 {
+        /*display: none;    */
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    h1.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}

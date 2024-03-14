@@ -306,7 +306,7 @@ footer p {
 
   
 .dialog-container {
-  height: 750px;
+  height: 650px;
   width: 450px;
   background-color: var(--dialog-background-color);
   border-radius: 8px;
@@ -430,6 +430,7 @@ footer p {
 
   
 #contact-frame.isvisible {
+  margin-bottom: 50px;
   z-index: 9999;
   opacity: 1;
   visibility: visible;

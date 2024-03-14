@@ -28,8 +28,8 @@ const overlay = select('#overlay');
 const alert = select('#alert');
 const fullName = select('#name');
 const email = select('#email');
-const message = select('#message');
 const button = select('#contact-btn');
+const message = document.getElementById('message');
 let isVisible = false;
 
 function showDialog() {
@@ -69,6 +69,15 @@ onEvent('click', button, function() {
     alert.classList.remove('isvisible');
     clearForm();
   }, 5500);
+});
+
+// Function that displays hero text on page load
+onEvent('load', window, function() {
+  message.classList.toggle('visible');
+
+  this.innerText = message.classlist.contains('visible')?
+      'Hide message' : 'Show message'
+
 });
 
 // Language Changer
