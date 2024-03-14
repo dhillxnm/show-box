@@ -127,13 +127,11 @@ div.column {
     width: 450px;
     background-color: var(--background-mask);
     border-radius: 8px;
-    z-index: 2;
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    display: none;
   }
   
   .dialog-container h2 {
@@ -228,6 +226,156 @@ div.column {
     line-height: 26px;
   
   }
+
+  
+#contact-frame {
+    cursor: default;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -52%);
+       -moz-transform: translate(-50%, -52%);
+           transform: translate(-50%, -52%);
+}
+    
+#contact-frame.isvisible {
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*   Overlay                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 5555;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(16, 18, 20, .55);
+    cursor: pointer
+  }
+  
+  #overlay.isvisible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #contact-frame, #login-frame, #overlay, #fail {
+    transition: all .2s ease-in-out;
+  }
+  
+  
+  
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /*  Alert                                                */
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  
+  #alert {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 6.9rem;
+    background-color: rgba(16, 18, 20, .55);
+    text-align: center;
+    cursor: default;
+    z-index: 9999;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  
+  #alert-message {
+    position: relative;
+    line-height: 6.9rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  #alert-message::before {
+    content: 'Your message has been sent successfully';
+  }
+  
+  #alert.isvisible {
+    visibility: visible;
+    -webkit-animation: alert 4s ease-in-out 1.5s 1;
+       -moz-animation: alert 4s ease-in-out 1.5s 1;
+            animation: alert 4s ease-in-out 1.5s 1;
+  }
+  
+  @-webkit-keyframes alert {
+    0%, 100% { -webkit-transform: translateY(-100%); opacity: 0; }
+    5%, 95% {opacity: 1}
+    12%, 50%, 88% { -webkit-transform: translateY(0); opacity: 1; }
+  }
+  
+  @-moz-keyframes alert {
+    0%, 100% { -moz-transform: translateY(-100%); opacity: 0; }
+    5%, 95% {opacity: 1}
+    12%, 50%, 88% { -moz-transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes alert {
+    0%, 100% { transform: translateY(-100%); opacity: 0; }
+    5%, 95% {opacity: 1}
+    12%, 50%, 88% { transform: translateY(0); opacity: 1; }
+  }
+  
+  
+  
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /*  Fail                                                 */
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  
+  #fail {
+    position: fixed;
+    right: 3.5rem;
+    bottom: 3.3rem;
+    z-index: 9999;
+  }
+  
+  #fail p i {
+    font-size: 1.9rem;
+    color: #f34a49;
+    -webkit-animation: blink 1.4s infinite;
+       -moz-animation: blink 1.4s infinite;
+            animation: blink 1.4s infinite;
+  }
+  
+  @-webkit-keyframes blink {
+    0%, 100% { opacity: 1}
+    50% { opacity: 0}
+  }
+  
+  @-moz-keyframes blink {
+    0%, 100% { opacity: 1}
+    50% { opacity: 0}
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1}
+    50% { opacity: 0}
+  }
+  
+  
+    
   
 
 
