@@ -31,3 +31,11 @@ const email = select('#email');
 const message = select('#message');
 const button = select('#contact-btn');
 let isVisible = false;
+
+function clearForm() {
+  fullName.value = '';
+  email.value = '';
+  message.value = '';
+}
+
+ 
