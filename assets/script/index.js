@@ -32,12 +32,6 @@ const message = select('#message');
 const button = select('#contact-btn');
 let isVisible = false;
 
-function clearForm() {
-  fullName.value = '';
-  email.value = '';
-  message.value = '';
-}
-
 function showDialog() {
   dialog.classList.add('isvisible');
   overlay.classList.add('isvisible');
@@ -76,3 +70,55 @@ onEvent('click', button, function() {
     clearForm();
   }, 5500);
 });
+
+// Language Changer
+
+// const languageSelect = document.getElementById('language');
+// const unlimited = document.getElementById('unlimited');
+
+// languageSelect.addEventListener('change', function() {
+//   if (languageSelect.value === 'french') {
+//     unlimited.innerText = 'Films, émissions de télévision et plus illimités';
+//   } else {
+//     unlimited.innerText = 'Unlimited movies, TV shows, and more';
+//   }
+// })
+
+// //==================================================
+
+// const english = {
+//     'Unlimited movies, TV shows, and more': 'Unlimited movies, TV shows, and more',
+//     'Starts at $5.99. Cancel anytime.': 'Starts at $5.99. Cancel anytime.',
+//     'Ready to watch? SIGN IN or restart your membership.': 'Ready to watch? SIGN IN or restart your membership.',
+//     'Trending Now': 'Trending Now',
+//     'More Reasons to join': 'More Reasons to join',
+//     'Enjoy on your TV': 'Enjoy on your TV',
+//     'Download your shows to watch offline': 'Download your shows to watch offline',
+//     'Watch everywhere': 'Watch everywhere',
+//     'Create profiles for kids': 'Create profiles for kids',
+//     'Ready to watch? Enter your email to create or restart your membership.': 'Ready to watch? Enter your email to create or restart your membership.',
+//     'Questions? Call 1-733-834-7734': 'Questions? Call 1-733-834-7734'
+// }
+
+// const french = {
+//     'Unlimited movies, TV shows, and more': 'Films, séries TV et plus en illimité',
+//     'Starts at $5.99. Cancel anytime.': 'Commence à 5,99 $ CA. Annulez quand vous voulez.',
+//     'Ready to watch? SIGN IN or restart your membership.': 'Prêt à regarder? CONNECTEZ-VOUS ou redémarrez votre abonnement.',
+//     'Trending Now': 'Tendance actuelle',
+//     'More Reasons to join': 'Plus de raisons de vous inscrire',
+//     'Enjoy on your TV': 'Profitez de votre téléviseur',
+//     'Download your shows to watch offline': 'Téléchargez vos émissions pour les regarder hors ligne',
+//     'Watch everywhere': 'Regardez partout',
+//     'Create profiles for kids': 'Créez des profils pour les enfants',
+//     'Ready to watch? Enter your email to create or restart your membership.': 'Prêt à regarder? Entrez votre adresse e-mail pour créer ou redémarrer votre abonnement.',
+//     'Questions? Call 1-733-834-7734': 'Des questions? Appelez le 1-733-834-7734'
+// }
+
+// const sentenceArray = document.querySelectorAll('h1, h4, p, a, span, option');
+
+// function updateTextContent(language){
+//   if (languageSelect.value === 'french')
+//   sentenceArray.forEach(element => {
+//     element.innerText = sentenceArray[]
+//   });
+// }
