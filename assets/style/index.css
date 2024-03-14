@@ -29,8 +29,6 @@ section.three-column {
 div.column {
     border: 1px solid #ddd;
     margin: 0.5%;
-    /* width: calc(33.33% - 1%);
-    flex: 1; */
     flex: 0 0 calc(25% - 15px);
     width: calc(25% - 15px);
     height: 390px;
@@ -415,8 +413,39 @@ div.column {
 }
 
 @media screen and (max-width: 500px) {
+
+    .header.container.flex.space-between {
+        width: 444px;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .secondary-hero-text h1 {
+        font-size: 33px;
+        display: block;
+        width: 479px;
+        text-align: center;
+        padding: 0px;
+    } 
+
+   .secondary-hero-text h4 {
+        width: 506px;
+        font-size: 19px;
+        padding-right: 12%;
+    } 
+
+    .secondary-hero-text p {
+        font-size: 15px;
+        padding: 0px;
+    }
+
+     h1 {
+        text-align: center;
+        margin: 0px;
+     }
     .three-column {
-        width: 900px; /* Stack the columns vertically */
+        width: 250px; 
+        text-align: center;
     }
 
     div.column {
@@ -427,6 +456,7 @@ div.column {
     .reasons p {
         height: 250px;
     }
+
     .form-box  {
         width: 69%;
 
@@ -435,12 +465,5 @@ div.column {
         width:201px
     }
     
-    .secondary-hero-text h1{
-        font-size:20px
-    }
-
-    .secondary-hero-text h4, .secondary-hero-text p  {
-        font-size:13px;
-    }
 
 }
