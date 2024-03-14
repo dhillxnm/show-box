@@ -3,74 +3,74 @@
 
 
 :root {
-  --background-color-one: rgb(0, 0, 0);
-  --background-color-two: rgb(255, 255, 255);
-  --dialog-background-color: rgba(0, 0, 0, 0.877);
-  --font-color-one: rgb(240, 235, 235);
-  --font-color-two: rgb(28, 26, 26);
-  --footer-background: rgba(251, 251, 251, 0);
-  --background-mask: rgba(0, 0, 0, 0.7);
-  --action-button-color: rgb(214, 33, 17);
-  --input-background-color: rgba(26, 26, 26, 0.863);
-  --input-border-color: rgba(240, 235, 235, 0.831);
-  --shadow: -16px 13px 19px -3px rgba(0, 0, 0, 0.122);
+    --background-color-one: rgb(0, 0, 0);
+    --background-color-two: rgb(255, 255, 255);
+    --dialog-background-color: rgba(0, 0, 0, 0.877);
+    --font-color-one: rgb(240, 235, 235);
+    --font-color-two: rgb(28, 26, 26);
+    --footer-background: rgba(251, 251, 251, 0);
+    --background-mask: rgba(0, 0, 0, 0.7);
+    --action-button-color: rgb(214, 33, 17);
+    --input-background-color: rgba(26, 26, 26, 0.863);
+    --input-border-color: rgba(240, 235, 235, 0.831);
+    --shadow: -16px 13px 19px -3px rgba(0, 0, 0, 0.122);
 }
 
 
 * {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-  background-color: var(--background-color-one);
+    background-color: var(--background-color-one);
 }
 
 
 /* Auxilary classes */
 
 .container {
-  width: min(100% - 90px, 1080px);
-  margin: 0 auto;
-} 
+    width: min(100% - 90px, 1080px);
+    margin: 0 auto;
+}
 
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 
 .space-around {
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
 
 .space-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 
 .center {
-  justify-content: center;
-  text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
 .gap-10 {
-  gap: 15px;
+    gap: 15px;
 }
 
 
 .gap-40 {
-  gap: 40px;
+    gap: 40px;
 }
 
 
@@ -80,67 +80,68 @@ body {
 
 
 header {
-  height: 56px;
-  width: 100%;
-  color: var(--font-color-one);
-  line-height: 56px;
-  z-index: 3;
-  position: absolute;
+    height: 56px;
+    width: 100%;
+    color: var(--font-color-one);
+    line-height: 56px;
+    z-index: 3;
+    position: absolute;
 }
 
 
 nav {
-  display: flex;
+    display: flex;
 }
 
 
 .logo {
-  margin-top: 8px;
-  background:#ffffff00 url('../image/showbox-logo.png') center / cover no-repeat;
-  background-size: contain;
-  width: 150px;
-  height: 50px;
-  line-height: 56px;
+    margin-top: 8px;
+    background: #ffffff00 url('../image/showbox-logo.png') center / cover no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    line-height: 56px;
 }
 
 
-header select , .section select{
-  width: 120px;
-  height: 45px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 5px;
-  background-color: var(--input-background-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  padding-left: 8px;
-  margin-top: 13px;
-  line-height: 56px;
-
-  &:hover {
+header select,
+.section select {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--input-background-color);
+    color: var(--font-color-one);
     text-decoration: none;
-  }
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    padding-left: 8px;
+    margin-top: 13px;
+    line-height: 56px;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-header .header-button{
-  width: 120px;
-  height: 45px;
-  margin-top: 13px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 5px;
-  background-color: var(--action-button-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  line-height: 26px;
-
-  &:hover {
+header .header-button {
+    width: 120px;
+    height: 45px;
+    margin-top: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--action-button-color);
+    color: var(--font-color-one);
     text-decoration: none;
-  }
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
+
+    &:hover {
+        text-decoration: none;
+    }
 
 }
 
@@ -148,115 +149,117 @@ header .header-button{
 
 
 main {
-  background-color: var(--background-color-one); 
-  height: calc(100% - 56px - 156px); 
-  overflow: auto;
+    background-color: var(--background-color-one);
+    height: calc(100% - 56px - 156px);
+    overflow: auto;
 }
 
 
 h1 {
-  font-size: 45px;
-  font-weight: 700;
-  color: #fff;
-  padding: 50px 0px 10px 0px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    padding: 50px 0px 10px 0px;
 }
 
 
-h1 + p {
-  font-size: 18px;
-  font-weight: 400;
+h1+p {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 
-h4, p {
-  padding: 5px;
-  font-size: 18px;
-  font-weight: 300px;
-  color: rgba(250, 250, 250, 0.811);
+h4,
+p {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300px;
+    color: rgba(250, 250, 250, 0.811);
 }
 
 
 /*Banners heroes and sections*/
 
 
-.secondary-hero-container{
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.secondary-hero-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 
 .secondary-hero-image {
-  background-position: center;
-  height: 100vh;
-  position: relative;
- }
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
 
 
 .secondary-hero-text {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: var(--font-color-one);
-  z-index: 2;
-  position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color-one);
+    z-index: 2;
+    position: absolute;
 
-  div {
-    text-align: center;
-  }
+    div {
+        text-align: center;
+    }
 }
 
 
 .secondary-hero-image:before {
-  position: absolute;
-  background-color: var(--background-mask);
-  z-index: 1;
-  content: "";
-  height: 100%;
-  width: 100%;
+    position: absolute;
+    background-color: var(--background-mask);
+    z-index: 1;
+    content: "";
+    height: 100%;
+    width: 100%;
 }
 
 
-.landing-email-input, .footer-email {
-  width: 500px;
-  height: 80px;
-  margin-top: 13px;
-  padding: 0px 17px;
-  font-size: 25px;
-  font-weight: 500;
-  border-radius: 5px;
-  border: 0.5px solid var(--input-border-color);
-  background-color: var(--input-background-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  line-height: 26px;
+.landing-email-input,
+.footer-email {
+    width: 500px;
+    height: 80px;
+    margin-top: 13px;
+    padding: 0px 17px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0.5px solid var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
 
 }
 
 
 .landing-email-submit {
-  width: 250px;
-  height: 80px;
-  margin-top: 13px;
-  font-size: 21px;
-  font-weight: 500;
-  border-radius: 5px;
-  background-color: var(--action-button-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  line-height: 26px;
+    width: 250px;
+    height: 80px;
+    margin-top: 13px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--action-button-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
 }
 
 
 .landing-email-submit:hover {
-  background-color: #a71a0d;
+    background-color: #a71a0d;
 }
 
 
@@ -266,7 +269,7 @@ h4, p {
 
 
 .section select {
-  margin-bottom: 8%;
+    margin-bottom: 8%;
 }
 
 
@@ -276,167 +279,171 @@ h4, p {
 
 
 .footer-p p {
-  color: #fff;
-  padding: 80px 0px 20px 0px;
-  font-size: 21px;
+    color: #fff;
+    padding: 80px 0px 20px 0px;
+    font-size: 21px;
 }
 
 
 .footer-email {
-  width: 75%;
+    width: 75%;
 }
 
 
 section p span {
-  color: #fff;
-  padding: 0px;
-  font-size: 21px;
+    color: #fff;
+    padding: 0px;
+    font-size: 21px;
 }
 
 
 footer p {
-  color: rgb(255 255 255/0.4);
-  height: 50px;
-  width: 100%;
-} 
+    color: rgb(255 255 255/0.4);
+    height: 50px;
+    width: 100%;
+}
 
 /*------------------------*/
 /** BAsic Dialog Styles **/
 /*------------------------*/
 
-  
+
 .dialog-container {
-  height: 650px;
-  width: 450px;
-  background-color: var(--dialog-background-color);
-  border-radius: 8px;
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
+    height: 650px;
+    width: 450px;
+    background-color: var(--dialog-background-color);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
 }
 
 
 .dialog-container h2 {
-  text-align: left;
-  margin-left: 70px;
-  margin-top: 60px;
-  margin-bottom: 10px;
-  color: var(--font-color-one);
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: var(--font-color-one);
 }
 
 
 .dialog-container input {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 
 .forgot-password {
-  height: 10px;
-  margin-top: 15px;
-  a {
-    color: var(--font-color-one);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
+    height: 10px;
+    margin-top: 15px;
+
+    a {
+        color: var(--font-color-one);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
 }
 
 
 .dialog-footer {
-  color: var(--font-color-one);
-  padding: 0px 15px;
-  margin-top: 80px;
+    color: var(--font-color-one);
+    padding: 0px 15px;
+    margin-top: 80px;
 }
 
 
 .dialog-footer p {
-  margin-left: 20px;
-  font-size: 18px;
-  text-align: left;
-  color: var(--font-color-three);
-  a {
-    color: var(--font-color-one);
-    text-decoration: none;
-  }
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: left;
+    color: var(--font-color-three);
+
+    a {
+        color: var(--font-color-one);
+        text-decoration: none;
+    }
 }
 
 
 .dialog-footer label {
-  color: var(--font-color-one);
-  margin-left: 10px;
-  margin-right: 200px;
-  font-size: 18px;
-  text-align: left;
+    color: var(--font-color-one);
+    margin-left: 10px;
+    margin-right: 200px;
+    font-size: 18px;
+    text-align: left;
 }
 
 
-.dialog-footer p + p {
-  font-size: 12px;
-  a {
-    color: rgb(0, 0, 255);
-    text-decoration: none;
-  }
+.dialog-footer p+p {
+    font-size: 12px;
+
+    a {
+        color: rgb(0, 0, 255);
+        text-decoration: none;
+    }
 }
 
 
 .dialog-email-input {
-  width: 312.5px;
-  height: 55px;
-  margin-top: 13px;
-  padding: 0px 17px;
-  font-size: 25px;
-  font-weight: 500;
-  border-radius: 5px;
-  border: 0.5px solid var(--input-border-color);
-  background-color: var(--input-background-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  line-height: 26px;
+    width: 312.5px;
+    height: 55px;
+    margin-top: 13px;
+    padding: 0px 17px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0.5px solid var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
 }
 
 
 .dialog-container-submit {
-  width: 312.5px;
-  height: 55px;
-  margin-top: 13px;
-  font-size: 21px;
-  font-weight: 500;
-  border-radius: 5px;
-  background-color: var(--action-button-color);
-  color: var(--font-color-one);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
-  line-height: 26px;
+    width: 312.5px;
+    height: 55px;
+    margin-top: 13px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--action-button-color);
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    line-height: 26px;
 
 }
 
 
 #contact-frame {
-  cursor: default;
-  overflow: hidden;
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate(-50%, -52%);
-  -moz-transform: translate(-50%, -52%);
-  transform: translate(-50%, -52%);
+    cursor: default;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -52%);
+    -moz-transform: translate(-50%, -52%);
+    transform: translate(-50%, -52%);
 }
 
-  
+
 #contact-frame.isvisible {
-  margin-bottom: 50px;
-  z-index: 9999;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    margin-bottom: 50px;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -447,27 +454,30 @@ footer p {
 
 
 #overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 5555;
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(16, 18, 20, .55);
-  cursor: pointer
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 5555;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(16, 18, 20, .55);
+    cursor: pointer
 }
 
 
 #overlay.isvisible {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 
-#contact-frame, #login-frame, #overlay, #fail {
-  transition: all .2s ease-in-out;
+#contact-frame,
+#login-frame,
+#overlay,
+#fail {
+    transition: all .2s ease-in-out;
 }
 
 
@@ -478,62 +488,107 @@ footer p {
 
 
 #alert {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 6.9rem;
-  background-color: rgba(16, 18, 20, .55);
-  text-align: center;
-  cursor: default;
-  z-index: 9999;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 6.9rem;
+    background-color: rgba(16, 18, 20, .55);
+    text-align: center;
+    cursor: default;
+    z-index: 9999;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #alert-message {
-  position: relative;
-  line-height: 6.9rem;
-  text-align: center;
-  font-size: 1.7rem;
-  font-weight: 400;
-  color: #fff;
+    position: relative;
+    line-height: 6.9rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #fff;
 }
 
 
 #alert-message::before {
-  content: 'Your message has been sent successfully';
+    content: 'Your message has been sent successfully';
 }
 
 
 #alert.isvisible {
-  visibility: visible;
-  -webkit-animation: alert 4s ease-in-out 1.5s 1;
-  -moz-animation: alert 4s ease-in-out 1.5s 1;
-  animation: alert 4s ease-in-out 1.5s 1;
+    visibility: visible;
+    -webkit-animation: alert 4s ease-in-out 1.5s 1;
+    -moz-animation: alert 4s ease-in-out 1.5s 1;
+    animation: alert 4s ease-in-out 1.5s 1;
 }
 
 
 @-webkit-keyframes alert {
-  0%, 100% { -webkit-transform: translateY(-100%); opacity: 0; }
-  5%, 95% {opacity: 1}
-  12%, 50%, 88% { -webkit-transform: translateY(0); opacity: 1; }
+
+    0%,
+    100% {
+        -webkit-transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    5%,
+    95% {
+        opacity: 1
+    }
+
+    12%,
+    50%,
+    88% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes alert {
-  0%, 100% { -moz-transform: translateY(-100%); opacity: 0; }
-  5%, 95% {opacity: 1}
-  12%, 50%, 88% { -moz-transform: translateY(0); opacity: 1; }
+
+    0%,
+    100% {
+        -moz-transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    5%,
+    95% {
+        opacity: 1
+    }
+
+    12%,
+    50%,
+    88% {
+        -moz-transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes alert {
-  0%, 100% { transform: translateY(-100%); opacity: 0; }
-  5%, 95% {opacity: 1}
-  12%, 50%, 88% { transform: translateY(0); opacity: 1; }
+
+    0%,
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    5%,
+    95% {
+        opacity: 1
+    }
+
+    12%,
+    50%,
+    88% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -544,35 +599,56 @@ footer p {
 
 
 #fail {
-  position: fixed;
-  right: 3.5rem;
-  bottom: 3.3rem;
-  z-index: 9999;
+    position: fixed;
+    right: 3.5rem;
+    bottom: 3.3rem;
+    z-index: 9999;
 }
 
 
 #fail p i {
-  font-size: 1.9rem;
-  color: #f34a49;
-  -webkit-animation: blink 1.4s infinite;
-  -moz-animation: blink 1.4s infinite;
-  animation: blink 1.4s infinite;
+    font-size: 1.9rem;
+    color: #f34a49;
+    -webkit-animation: blink 1.4s infinite;
+    -moz-animation: blink 1.4s infinite;
+    animation: blink 1.4s infinite;
 }
 
 
 @-webkit-keyframes blink {
-  0%, 100% { opacity: 1}
-  50% { opacity: 0}
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
 }
 
 
 @-moz-keyframes blink {
-  0%, 100% { opacity: 1}
-  50% { opacity: 0}
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
 }
 
 
 @keyframes blink {
-  0%, 100% { opacity: 1}
-  50% { opacity: 0}
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
 }
