@@ -8,11 +8,10 @@
 /* Banner */
 
 header{
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--background-color-one);
+  color: var(--font-color-one);
   height: 60px;
 }
 
@@ -63,27 +62,35 @@ header{
 }
 
 .like, .dislike{
-  color: var(--font-color-one);
+  color: var(--font-color-two);
+  background-color: #fff;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   height: auto;
+  font-size: 30px;
 }
 
-.like p, .dislike p{
-  padding: 0;
+.rating {
+  justify-content: space-around;
 }
+
 .like {
-  background-color: var(--action-button-color);
-  margin-bottom: 5px;
 }
 
 .dislike {
-  background-color: var(--input-background-color);
+}
+
+.like:hover{
+  color: forestgreen;
+}
+
+.dislike:hover{
+  color: red;
 }
 
 .info-section{
-  width: 100%;
+  width: 900px;
   margin-left: 20px;
 }
 
@@ -99,7 +106,7 @@ button[type=button]{
   background-color: var(--action-button-color);
 }
 
-.fa-play, .fa-plus, .fa-thumbs-up, .fa-thumbs-down{
+.fa-play, .fa-plus{
   margin-right: 10px;
 }
 
