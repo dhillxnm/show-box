@@ -179,7 +179,7 @@ div.column.reasons{
     div.column {
         flex: 0 0 calc(50% - 10px);
         max-width: 100%;
-        height: auto;
+        height: 360px;
     }
 
     section.three-column {
@@ -187,19 +187,9 @@ div.column.reasons{
         gap: 5px;
     }
 
-    div.column {
-        height: 360px;
-    }
-
-    
-    .column.reasons{
-        height: 350px;
-    }
-
     .more a {
         left: 80%;
     }
-
 
     .secondary-hero-text h1{
         font-size:33px
@@ -347,9 +337,6 @@ div.column.reasons{
         width: 69%;
 
     }
-    .form-box .landing-email-submit {
-        width:201px
-    }
 
     .form-box.center.flex{
         justify-content: center;
@@ -358,7 +345,6 @@ div.column.reasons{
         align-items: center;
         width: 328px;
     }
-
 
     form div .landing-email-input{
         width: 300px;

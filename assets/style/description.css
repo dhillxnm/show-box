@@ -265,11 +265,43 @@ footer p {
 } 
 
 /* Media queries for responsiveness */
+
+@media (max-width: 1037px) {
+  section.three-column {
+      width: 99%;
+      gap: 5px;
+  }
+}
+
 @media (max-width: 930px) { /* Laptops and Desktops */
     div.column {
         flex: 0 0 calc(50% - 10px);
         max-width: 100%;
-        height: auto;
+        height: 350px;
+    }
+
+    section.three-column {
+        width: 83%;
+        gap: 5px;
+    }
+    
+    .more a {
+        left: 80%;
+    }
+
+    form div .landing-email-input {
+        width: 410px;
+        height: 57px;
+    }
+
+    .form-box .landing-email-submit {
+        width: 160px;
+        height: 57px;
+        font-size: 16px;
+    }
+
+    div.container.section{
+        padding-left: 100px;
     }
 
     .form-box.center.flex-wrap{
@@ -280,12 +312,56 @@ footer p {
 
 @media screen and (max-width: 765px) { /* Tablets */
 
-    .secondary-hero-text h1{
-        font-size:19px
+    /* Movie description box */
+
+    .photo{
+        margin-top: 80px;
+      }
+      .photo-column{
+        width: 380px;
+      }
+  
+      .play-two{
+        margin: 10px 0;
+      }
+  
+      button[type=button].play-two, button[type=button].plus{
+        width: 100%;
+      }
+  
+      .photo-column .watch-favorite{
+        display: block;
+      }
+  
+      .info-section .watch-favorite{
+        display: none;
+      }
+  
+      .title{
+        justify-self: left;
+        padding-left: 0;
+      }
+
+    /*  movie suggestion sections */ 
+
+    section.three-column {
+        width: 98%;
+        gap: 5px;
     }
-    .secondary-hero-text h4 {
-        font-size: 20px;
+
+    div.container.section{
+        padding-left: 30px;
     }
+   
+
+    .column.reasons{
+        height: 350px;
+    }
+
+    .more a {
+        left: 80%;
+    }
+
     .landing-email-submit{
         width:181px;
         font-size: 17px;
@@ -294,51 +370,62 @@ footer p {
         width:357px;
     }
 
-    .secondary-hero-text p{
-        font-size: 20px;
+    .column img {
+        width: 100%;
     }
 
-    .column img {
-        width: 100%; /* Make images take full width */
+    section footer p {
+        padding-left: 30px;
     }
 
     .form-box.center.flex-wrap{
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
-
-    /* Tessstiingggg */
-
-    .photo{
-      margin-top: 80px;
-    }
-    .photo-column{
-      width: 380px;
-    }
-
-    .play-two{
-      margin: 10px 0;
-    }
-
-    button[type=button].play-two, button[type=button].plus{
-      width: 100%;
-    }
-
-    .photo-column .watch-favorite{
-      display: block;
-    }
-
-    .info-section .watch-favorite{
-      display: none;
-    }
-
-    .title{
-      justify-self: left;
-      padding-left: 0;
-    }
-
 }
 
 @media screen and (max-width: 500px) { /* Smartphones or tablets in portrait */
+
+    /* Movie Description box*/
+
+    .movie {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .photo-column{
+        width: 200px;
+      }
+  
+      .photo{
+        margin-top: 0;
+        height: 250px;
+      }
+  
+      button[type=button].play-two, button[type=button].plus{
+        width: 100%;
+      }
+  
+      .play-two{
+        margin: 10px 0;
+      }
+  
+      .plus{
+        margin: 0;
+      }
+      
+      .watch-favorite {
+        flex-direction: column;
+        justify-self: center;
+        width: 200px;
+      }
+  
+      .info-section{
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+      }
+  
+    /*  movie suggestion sections */ 
 
     .header.container.flex.space-between {
         width: 444px;
@@ -346,91 +433,47 @@ footer p {
         justify-content: center;
     }
 
-    .secondary-hero-text h1 {
-        font-size: 33px;
-        display: block;
-        width: 479px;
-        text-align: center;
-        padding: 0px;
-    } 
-
-   .secondary-hero-text h4 {
-        width: 506px;
-        font-size: 19px;
-        padding-right: 12%;
-    } 
-
-    .secondary-hero-text p {
-        font-size: 15px;
-        padding: 0px;
-    }
-
-     h1 {
-        text-align: center;
-        margin: 0px;
-     }
     .three-column {
-        width: 250px; 
+        width: 312px;
         text-align: center;
-    }
-
-    div.container.section{
+        gap: 10px;
     }
 
     div.column {
         flex: 0 0 100%;
         max-width: 100%;
+        height: 430px;
     }
 
     .reasons p {
-        height: 250px;
+        height: 20px;
+    }
+
+    .footer-p p {
+        padding: 34px 0px 20px 0px;
     }
 
     .form-box  {
         width: 69%;
 
     }
+
+    .form-box.center.flex-wrap{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 328px;
+    }
+
+    form div .landing-email-input{
+        width: 300px;
+        height: 70px;
+    }
+
     .form-box .landing-email-submit {
-        width:201px
+        width: 160px;
+        height: 57px;
+        font-size: 16px;
     }
-
-    /* teeeeeeessssstingggggggg  movie box*/
-    .movie {
-      flex-direction: column; /* Stack columns vertically */
-      align-items: center;
-    }
-
-    .photo-column{
-      width: 200px;
-    }
-
-    .photo{
-      margin-top: 0;
-      height: 250px;
-    }
-
-    button[type=button].play-two, button[type=button].plus{
-      width: 100%;
-    }
-
-    .play-two{
-      margin: 10px 0;
-    }
-
-    .plus{
-      margin: 0;
-    }
-    
-    .watch-favorite {
-      flex-direction: column;
-      justify-self: center;
-      width: 200px;
-    }
-
-    .info-section{
-      width: 100%;
-      margin-left: 0;
-      align-items: center;
-    }
-
 }
