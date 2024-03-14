@@ -84,6 +84,10 @@ div.column {
     position: relative;
 }
 
+div.column.reasons{
+    height: 350px;
+}
+
 
 .reasons h2 {
     padding: 15px 0px 0px 23px;
@@ -149,22 +153,38 @@ div.column {
     
   
 /* Media queries for responsiveness */
+
+
+@media (max-width: 1037px) {
+    section.three-column {
+        width: 99%;
+        gap: 5px;
+    }
+}
+
+
+
 @media (max-width: 930px) {
     div.column {
         flex: 0 0 calc(50% - 10px);
         max-width: 100%;
         height: auto;
     }
-}
-
-
-@media screen and (max-width: 765px) {
 
     section.three-column {
         width: 83%;
         gap: 5px;
     }
 
+    div.column {
+        height: 360px;
+    }
+
+    
+    .column.reasons{
+        height: 350px;
+    }
+    
     .more a {
         left: 80%;
     }
@@ -173,6 +193,58 @@ div.column {
     .secondary-hero-text h1{
         font-size:33px
     }
+
+    form div .landing-email-input {
+        width: 410px;
+        height: 57px;
+    }
+
+    .form-box .landing-email-submit {
+        width: 160px;
+        height: 57px;
+        font-size: 16px;
+    }
+
+    /* section.three-column.center{
+        justify-self: center;
+        margin-left: 50px;
+    } */
+
+    div.container.section{
+        padding-left: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 765px) {
+
+    section.three-column {
+        width: 98%;
+        gap: 5px;
+    }
+
+    div.container.section{
+        padding-left: 30px;
+    }
+   
+
+    .column.reasons{
+        height: 350px;
+    }
+
+    .more a {
+        left: 80%;
+    }
+
+    .secondary-hero-text h1 {
+        font-size: 48px;
+        display: block;
+        width: 540px;
+        text-align: center;
+        padding: 0px;
+    }
+
     .secondary-hero-text h4 {
         font-size: 19px;
     }
@@ -189,7 +261,11 @@ div.column {
     }
 
     .column img {
-        width: 100%; /* Make images take full width */
+        width: 100%; 
+    }
+
+    section footer p {
+        padding-left: 30px;
     }
 }
 
@@ -223,7 +299,6 @@ div.column {
      h1 {
         text-align: center;
         margin: 0px;
-        
      }
 
     section h1 {
@@ -247,12 +322,13 @@ div.column {
     }
 
     .reasons p {
-        height: 250px;
+        height: 20px;
     }
 
     .footer-p p {
         padding: 34px 0px 20px 0px;
     }
+
 
     .form-box  {
         width: 69%;
