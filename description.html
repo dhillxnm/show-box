@@ -26,7 +26,7 @@
     </head>
     <body>
         <header>
-            <div class="container flex space-between">
+            <div class="header container flex space-between">
               <div class="flex">
                   <div class="logo"></div>
               </div>
@@ -49,13 +49,17 @@
                 <div class="movie flex">
                     <div class="photo-column flex-column">
                         <div class="photo"></div>
-                        <div class="like flex">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <p>Like</p>
+                        <div class="rating flex">
+                            <button class="like flex">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </button>
+                            <button class="dislike flex">
+                                <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
+                            </button>
                         </div>
-                        <div class="dislike flex">
-                            <i class="fa-solid fa-thumbs-down"></i>
-                            <p>Dislike</p>
+                        <div class="watch-favorite flex">
+                            <button type="button" class="play-two"><i class="fa-solid fa-play"></i>Watch now</button>
+                            <button type="button" class="plus"><i class="fa-solid fa-plus"></i>Add to favorites</button>
                         </div>
                     </div>
                     <div class="info-section">
@@ -63,7 +67,7 @@
                             <button type="button" class="play-two"><i class="fa-solid fa-play"></i>Watch now</button>
                             <button type="button" class="plus"><i class="fa-solid fa-plus"></i>Add to favorites</button>
                         </div>
-                        <p>Wakanda Forever</p>
+                        <p class="title">Wakanda Forever</p>
                         <!-- "trailer, cam, imdb" -->
                         <article>
                             Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect 
@@ -100,7 +104,7 @@
                 <section class="footer-p">
                     <p>Ready to watch? Enter your email to create or restart your membership.</p>
                     <form action="" >
-                        <div class="form-box center flex gap-10">
+                        <div class="form-box center flex-wrap gap-10">
                             <input type="email" name="email" class="footer-email" placeholder="Email address">
                             <input type="submit" class="landing-email-submit" value="GET STARTED">
                         </div>
