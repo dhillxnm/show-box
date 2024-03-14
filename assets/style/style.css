@@ -95,7 +95,7 @@ nav {
 
 .logo {
   margin-top: 8px;
-  background:#ffffff00 url('../media/showbox-logo.png') center / cover no-repeat;
+  background:#ffffff00 url('../image/showbox-logo.png') center / cover no-repeat;
   background-size: contain;
   width: 210px;
   height: 70px;
@@ -308,8 +308,8 @@ z-index: 9999;
 opacity: 0;
 visibility: hidden;
 -webkit-transform: translate(-50%, -52%);
-   -moz-transform: translate(-50%, -52%);
-       transform: translate(-50%, -52%);
+-moz-transform: translate(-50%, -52%);
+transform: translate(-50%, -52%);
 }
 
 #contact-frame.isvisible {
@@ -317,6 +317,6 @@ visibility: hidden;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
