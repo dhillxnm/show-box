@@ -308,8 +308,8 @@ z-index: 9999;
 opacity: 0;
 visibility: hidden;
 -webkit-transform: translate(-50%, -52%);
-   -moz-transform: translate(-50%, -52%);
-       transform: translate(-50%, -52%);
+-moz-transform: translate(-50%, -52%);
+transform: translate(-50%, -52%);
 }
 
 #contact-frame.isvisible {
@@ -317,6 +317,6 @@ visibility: hidden;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

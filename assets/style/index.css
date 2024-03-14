@@ -3,28 +3,34 @@
     background: #fff0 url("../media/main-page-hero.jpg") center / cover no-repeat;
 }
 
+
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
 
+
 .gap-30 {
     gap: 30px;
 }
+
 
 .space-between {
     justify-content: space-between;
 }
 
+
 .header-button:hover {
     background-color: #a71a0d;
 }
+
 
 section.three-column {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2%;
 }
+
 
 div.column {
     border: 1px solid #ddd;
@@ -34,6 +40,8 @@ div.column {
     height: 390px;
     border-radius: 19px;
 }
+
+
 .column img {
     width: 100%;
     height: 100%;
@@ -42,14 +50,17 @@ div.column {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+
 .column img + .column img {
     margin-top: 4%;
 }
+
 
 .column:hover img {
     opacity: 1;
     transform: scale(1.02);
 }
+
 
 .more a {
     color: #fff;
@@ -58,20 +69,24 @@ div.column {
     left: 95%;
 }
 
+
 .more a:hover {
     text-decoration: underline;
     color: #1e90ff;
 }
+
 
 .reasons {
     background: linear-gradient(135deg, rgb(29 26 51 / 2), rgb(32 17 30 / 3));
     position: relative;
 }
 
+
 .reasons h2 {
     padding: 15px 0px 0px 23px;
     color: #fff;
 }
+
 
 .reasons p {
     padding-left: 11px;
@@ -82,6 +97,7 @@ div.column {
     color: #fff;
 }
 
+
 .reasons i {
     position: absolute;
     right: 37px;
@@ -90,12 +106,14 @@ div.column {
     color: #fe0089;
 }
 
+
 .flex .list {
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
 }
+
 
 .flex .list a {
     text-decoration: none;
@@ -104,13 +122,16 @@ div.column {
     font-size: 20px;
 }
 
+
 .flex .list a:hover {
     text-decoration: underline;
 }
 
+
 .flex .space-between {
     justify-content: space-between;
 }
+
 
 .footer p {
     text-align: center;
@@ -118,7 +139,10 @@ div.column {
     font-size: 19px;
 }
 
+/*------------------------*/
 /** BAsic Dialog Styles **/
+/*------------------------*/
+
   
 .dialog-container {
     height: 750px;
@@ -131,6 +155,7 @@ div.column {
     transform: translate(-50%, -50%);
     align-items: center;
   }
+
   
   .dialog-container h2 {
     text-align: left;
@@ -140,10 +165,12 @@ div.column {
     color: var(--font-color-one);
   }
   
+
   .dialog-container input {
     font-size: 20px;
   }
   
+
   .forgot-password {
     height: 10px;
     margin-top: 15px;
@@ -156,11 +183,13 @@ div.column {
     }
   }
   
+
   .dialog-footer {
     padding: 0px 15px;
     margin-top: 80px;
   }
   
+
   .dialog-footer p {
     margin-left: 20px;
     font-size: 18px;
@@ -170,8 +199,8 @@ div.column {
       color: var(--font-color-one);
       text-decoration: none;
     }
-  
   }
+
   
   .dialog-footer label {
     color: var(--font-color-one);
@@ -179,8 +208,8 @@ div.column {
     margin-right: 200px;
     font-size: 18px;
     text-align: left;
-  
   }
+
   
   .dialog-footer p + p {
     font-size: 12px;
@@ -206,9 +235,9 @@ div.column {
     cursor: pointer;
     transition: color 0.25s ease-in-out;
     line-height: 26px;
-  
   }
   
+
   .dialog-container-submit {
     width: 312.5px;
     height: 55px;
@@ -233,17 +262,18 @@ div.column {
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translate(-50%, -52%);
-       -moz-transform: translate(-50%, -52%);
-           transform: translate(-50%, -52%);
+    -moz-transform: translate(-50%, -52%);
+    transform: translate(-50%, -52%);
 }
+
     
 #contact-frame.isvisible {
     z-index: 9999;
     opacity: 1;
     visibility: visible;
     -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -251,6 +281,7 @@ div.column {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*   Overlay                                             */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 
 #overlay {
     position: fixed;
@@ -263,24 +294,27 @@ div.column {
     visibility: hidden;
     background-color: rgba(16, 18, 20, .55);
     cursor: pointer
-  }
+}
   
-  #overlay.isvisible {
+
+#overlay.isvisible {
     opacity: 1;
     visibility: visible;
-  }
+}
   
-  #contact-frame, #login-frame, #overlay, #fail {
+
+#contact-frame, #login-frame, #overlay, #fail {
     transition: all .2s ease-in-out;
-  }
+}
   
   
   
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-  /*  Alert                                                */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Alert                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   
-  #alert {
+
+#alert {
     position: fixed;
     width: 100%;
     top: 0;
@@ -294,47 +328,50 @@ div.column {
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-            backface-visibility: hidden;
-  }
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+ }
   
-  #alert-message {
+#alert-message {
     position: relative;
     line-height: 6.9rem;
     text-align: center;
     font-size: 1.7rem;
     font-weight: 400;
     color: #fff;
-  }
+}
   
-  #alert-message::before {
+
+#alert-message::before {
     content: 'Your message has been sent successfully';
-  }
+}
   
-  #alert.isvisible {
+
+#alert.isvisible {
     visibility: visible;
     -webkit-animation: alert 4s ease-in-out 1.5s 1;
-       -moz-animation: alert 4s ease-in-out 1.5s 1;
-            animation: alert 4s ease-in-out 1.5s 1;
-  }
+    -moz-animation: alert 4s ease-in-out 1.5s 1;
+    animation: alert 4s ease-in-out 1.5s 1;
+}
   
-  @-webkit-keyframes alert {
+
+ @-webkit-keyframes alert {
     0%, 100% { -webkit-transform: translateY(-100%); opacity: 0; }
     5%, 95% {opacity: 1}
     12%, 50%, 88% { -webkit-transform: translateY(0); opacity: 1; }
-  }
+}
   
-  @-moz-keyframes alert {
+@-moz-keyframes alert {
     0%, 100% { -moz-transform: translateY(-100%); opacity: 0; }
     5%, 95% {opacity: 1}
     12%, 50%, 88% { -moz-transform: translateY(0); opacity: 1; }
-  }
+}
   
-  @keyframes alert {
+@keyframes alert {
     0%, 100% { transform: translateY(-100%); opacity: 0; }
     5%, 95% {opacity: 1}
     12%, 50%, 88% { transform: translateY(0); opacity: 1; }
-  }
+}
   
   
   
@@ -342,41 +379,44 @@ div.column {
   /*  Fail                                                 */
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   
-  #fail {
+
+#fail {
     position: fixed;
     right: 3.5rem;
     bottom: 3.3rem;
     z-index: 9999;
-  }
+}
   
-  #fail p i {
+
+#fail p i {
     font-size: 1.9rem;
     color: #f34a49;
     -webkit-animation: blink 1.4s infinite;
-       -moz-animation: blink 1.4s infinite;
-            animation: blink 1.4s infinite;
-  }
+    -moz-animation: blink 1.4s infinite;
+    animation: blink 1.4s infinite;
+}
   
-  @-webkit-keyframes blink {
+
+@-webkit-keyframes blink {
     0%, 100% { opacity: 1}
     50% { opacity: 0}
-  }
+}
+
   
-  @-moz-keyframes blink {
+@-moz-keyframes blink {
     0%, 100% { opacity: 1}
     50% { opacity: 0}
-  }
+}
   
-  @keyframes blink {
+
+@keyframes blink {
     0%, 100% { opacity: 1}
     50% { opacity: 0}
-  }
+}
   
   
     
   
-
-
 /* Media queries for responsiveness */
 @media (max-width: 930px) {
     div.column {
@@ -464,6 +504,4 @@ div.column {
     .form-box .landing-email-submit {
         width:201px
     }
-    
-
 }
