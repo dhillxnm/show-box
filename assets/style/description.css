@@ -58,6 +58,10 @@ header{
   width: 150px;
 }
 
+.photo-column .watch-favorite{
+  display: none;
+}
+
 .photo{
   width: 100%;
   height: 220px;
@@ -78,12 +82,6 @@ header{
 
 .rating {
   justify-content: space-around;
-}
-
-.like {
-}
-
-.dislike {
 }
 
 .like:hover{
@@ -118,7 +116,6 @@ button[type=button]{
 
 .watch-favorite{
   justify-content: space-between;
-  justify-self: center;
 }
 
 .info-section p:first-of-type{
@@ -270,7 +267,7 @@ footer p {
 } 
 
 /* Media queries for responsiveness */
-@media (max-width: 930px) {
+@media (max-width: 930px) { /* Laptops and Desktops */
     div.column {
         flex: 0 0 calc(50% - 10px);
         max-width: 100%;
@@ -283,7 +280,7 @@ footer p {
 }
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 765px) { /* Tablets */
 
     .secondary-hero-text h1{
         font-size:19px
@@ -310,9 +307,40 @@ footer p {
     .form-box.center.flex-wrap{
       flex-wrap: nowrap;
     }
+
+    /* Tessstiingggg */
+
+    .photo{
+      margin-top: 80px;
+    }
+    .photo-column{
+      width: 380px;
+    }
+
+    .play-two{
+      margin: 10px 0;
+    }
+
+    button[type=button].play-two, button[type=button].plus{
+      width: 100%;
+    }
+
+    .photo-column .watch-favorite{
+      display: block;
+    }
+
+    .info-section .watch-favorite{
+      display: none;
+    }
+
+    .title{
+      justify-self: left;
+      padding-left: 0;
+    }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { /* Smartphones or tablets in portrait */
 
     .header.container.flex.space-between {
         width: 444px;
@@ -368,14 +396,36 @@ footer p {
         width:201px
     }
 
-    /* teeeeeeessssstingggggggg */
+    /* teeeeeeessssstingggggggg  movie box*/
     .movie {
       flex-direction: column; /* Stack columns vertically */
       align-items: center;
     }
+
+    .photo-column{
+      width: 200px;
+    }
+
+    .photo{
+      margin-top: 0;
+      height: 250px;
+    }
+
+    button[type=button].play-two, button[type=button].plus{
+      width: 100%;
+    }
+
+    .play-two{
+      margin: 10px 0;
+    }
+
+    .plus{
+      margin: 0;
+    }
     
     .watch-favorite {
       flex-direction: column;
+      justify-self: center;
       width: 200px;
     }
 
@@ -384,4 +434,5 @@ footer p {
       margin-left: 0;
       align-items: center;
     }
+
 }
