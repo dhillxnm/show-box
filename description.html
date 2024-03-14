@@ -6,7 +6,7 @@
         <meta name="author" content="">
         <meta name="description" content="showbox">
         <meta name="keywords" content="html, css, web, web development, javascript">
-        <title>showbox</title>
+        <title>ShowBox</title>
         <link rel="icon" type="image/x-icon" href="./assets/media/fav-icon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,23 +22,23 @@
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="./assets/style/description.css" media="all">
-        <script src="./assets/script/app.js" defer></script>
+        <script src="./assets/script/index.js" defer></script>
     </head>
     <body>
         <header>
             <div class="header container flex space-between">
-              <div class="flex">
-                  <div class="logo"></div>
-              </div>
-              <nav class="gap-10">
-                      <div>
+                <div class="flex">
+                    <div class="logo"></div>
+                </div>
+                <nav class="gap-10">
+                    <div>
                         <select>
-                          <option value="english">English</option>
-                          <option value="french">French</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
                         </select>
-                      </div>
-                      <input type="button" class="header-button" value="Sign in">
-              </nav>
+                    </div>
+                    <input type="button" class="header-button" id="contact" value="Sign in">
+                </nav>
             </div>
         </header>
         <main>
@@ -85,20 +85,35 @@
                     </div>
                 </div>
             </div>
-
+            <div class="dialog-container center" id="contact-frame">
+                <h2>Sign In</h2>
+                <form id="login-form">
+                    <input type="text" id="email" class="dialog-email-input" placeholder="Email or phone number" required>
+                    <input type="password" id="password" class="dialog-email-input" placeholder="Password" required>
+                    <input type="submit" class="dialog-container-submit" id="contact-btn" value="Sign In">
+                    <div class="forgot-password">
+                        <a href="#"> Forget password?</a>   
+                    </div>
+                    <div class="dialog-footer">
+                        <input type="checkbox" class="remember" name="remember"><label for="remember">Remember me</label>
+                        <p>New to Showbox? <a href="#">Sign up now.</a></p>
+                        <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+                    </div>
+                </form>
+            </div>
             <div class="container section">
                 <h2>You may also like</h2>
                 <section class="three-column">
-                  <div class="column"><img src="./assets/image/description-img-1.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/description-img-2.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/description-img-3.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/description-img-4.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/description-img-1.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/description-img-2.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/description-img-3.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/description-img-4.webp" alt="image"></div>
                 </section>
                 <section class="three-column">
-                  <div class="column"><img src="./assets/image/dex-img-5.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/des-img-6.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/des-img-7.webp" alt="image"></div>
-                  <div class="column"><img src="./assets/image/des-img-8.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/dex-img-5.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/des-img-6.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/des-img-7.webp" alt="image"></div>
+                    <div class="column"><img src="./assets/image/des-img-8.webp" alt="image"></div>
                 </section>
                 <p class="more"><a href="#">more</a></p>
                 <section class="footer-p">
@@ -138,5 +153,9 @@
         <footer class="footer">
             <p>showbox ULC | 40 King Street W 4th Floor, foresto, M5H 7G6 |1-899-346-9637</p>
         </footer>
+        <div id="overlay"></div>
+        <div id="alert">
+            <span id="alert-message"></span>
+        </div>
     </body>
 </html>

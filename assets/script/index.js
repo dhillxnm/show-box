@@ -1,6 +1,6 @@
 'use strict';
 
-// Utility function
+// Basic utility function
 function onEvent(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
@@ -21,7 +21,7 @@ function print(arg) {
   console.log(arg);
 }
 
-// main code
+// Basic Popup function
 const contact = select('#contact');
 const dialog = select('#contact-frame');
 const overlay = select('#overlay');
